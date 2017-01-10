@@ -1,0 +1,203 @@
+html, body{
+	background-color: #F8F8F8;
+}
+
+.navbar-inverse{
+	background-color: #00cddf;
+	border: none;
+}
+
+.navbar-inverse .navbar-brand{
+	/*background: #0eb4c3;*/
+	font-weight: bold;
+	border-right: 1px solid #0daebc;
+}
+/*.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
+	background-color: #0eb4c3;
+}*/
+.navbar-inverse .navbar-brand{
+	font-size: 23px;
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav>li>a{
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background: none;
+	padding-bottom: 12px;
+}
+
+.navbar-inverse .navbar-nav>li:hover>a, .navbar-inverse .navbar-nav>li:hover>a:focus, .navbar-inverse .navbar-nav>li:hover>a:hover{
+	background: #00c1d2;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+	background: #00c1d2;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+	background: #0eb4c3;
+}
+
+.navbar-inverse .navbar-nav>.active>span, .navbar-inverse .navbar-nav>.active>span, .navbar-inverse .navbar-nav>.active>span{
+	display: block;
+}
+.navbar-inverse .navbar-nav>li>span{
+	height: 3px;
+	width: 100%;
+	background: #FFFFFF;
+	display: none;
+	margin: 0 auto;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: #00cddf;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: #FFFFFF;
+}
+
+.container{
+	background-color: #FFFFFF;
+}
+
+.navbar-inverse .container{
+	background-color: transparent;
+}
+
+button.add-button{
+	margin-top: 20px;
+}
+div.clear{
+	clear: both;
+}
+label.error{
+	margin-top: 2px;
+	color: #ff5555;
+}
+.btn-salvar,
+.btn-confirmar{
+	margin-left: 5px;
+}
+.inselecionavel {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Horarios Disponíveis - Adicionar/Editar Sala*/
+#tabela-horarios-disponiveis-sala tbody tr td{
+	height: 40px;
+	cursor: pointer;
+}
+
+.disponivel{
+	background: #009688;
+}
+#tabela-horarios-disponiveis-sala tbody tr td.disponivel:hover{
+	background: #AAAAAA;
+}
+.indisponivel{
+	background: #EEEEEE;
+}
+#tabela-horarios-disponiveis-sala tbody tr td.indisponivel:hover{
+	background: #004D40;
+}
+#tabela-horarios-disponiveis-sala tbody tr td.borda-inferior.indisponivel,
+#tabela-horarios-disponiveis-sala tbody tr td.borda-inferior.inselecionavel,
+#tabela-horarios-aula-detalhes tbody tr td.borda-inferior.indisponivel,
+#tabela-horarios-aula-detalhes tbody tr td.borda-inferior.inselecionavel{
+	border-bottom: 1px solid #777777;
+}
+
+#tabela-horarios-disponiveis-sala tbody tr td.borda-inferior.disponivel,
+#tabela-horarios-aula-detalhes tbody tr td.borda-inferior.disponivel{
+	border-bottom: 1px solid #006355;
+}
+
+
+#tabela-horarios-disponiveis-sala tfoot,
+#tabela-horarios-disponiveis-sala tfoot tr,
+#tabela-horarios-disponiveis-sala tfoot tr td{
+	border: none;
+}
+#tabela-horarios-disponiveis-sala tfoot tr td div.legenda{
+	float: right;
+	margin-top: 8px;
+}
+#tabela-horarios-disponiveis-sala tfoot tr td div.legenda>p{
+	float: left;
+	margin-top: 2px;
+}
+#tabela-horarios-disponiveis-sala tfoot tr td div.legenda>span{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: left;
+	border: 1px solid #DDDDDD;
+	margin: 0 10px;
+}
+
+
+/*Horarios - Adicionar Aula */
+#tabela-horarios-aula tbody tr td{
+	height: 40px;
+	cursor: pointer;
+}
+
+#tabela-horarios-aula tbody tr td.disponivel:hover,
+#tabela-horarios-aula tbody tr td.disponivel.hover,
+.disponivel.hover{
+	background: #DD2C00;
+	border: none;
+}
+#tabela-horarios-aula tbody tr td.indisponivel:hover,
+#tabela-horarios-aula tbody tr td.indisponivel.hover{
+	background: #00B0FF;
+	border: none;
+}
+#tabela-horarios-aula tbody tr td.borda-inferior.indisponivel,
+#tabela-horarios-aula tbody tr td.borda-inferior.inselecionavel{
+	border-bottom: 1px solid #777777;
+}
+
+#tabela-horarios-aula tbody tr td.borda-inferior.disponivel{
+	border-bottom: 1px solid #006355;
+}
+
+
+#tabela-horarios-aula tfoot,
+#tabela-horarios-aula tfoot tr,
+#tabela-horarios-aula tfoot tr td{
+	border: none;
+}
+#tabela-horarios-aula tfoot tr td div.legenda{
+	float: right;
+	margin-top: 8px;
+}
+#tabela-horarios-aula tfoot tr td div.legenda.texto{
+	float: none;
+}
+#tabela-horarios-aula tfoot tr td div.legenda>p{
+	float: left;
+	margin-top: 2px;
+}
+#tabela-horarios-aula tfoot tr td div.legenda>span{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: left;
+	border: 1px solid #DDDDDD;
+	margin: 0 10px;
+}
+
+
+#agregar-informacoes{
+	display: none;
+}

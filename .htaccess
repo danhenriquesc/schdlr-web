@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule %{REQUEST_FILENAME} !-f
+RewriteRule %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI}  !\.(php|html?|jpg|gif|js|css)$
+RewriteRule ^([^/]*)/?([^/]*)/?([^/]*)/?([^/]*)/?([^/]*)/?$ index.php?pagina=$1&acao=$2&id=$3&aux1=$4&aux2=$5
